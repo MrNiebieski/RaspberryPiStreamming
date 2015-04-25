@@ -2,7 +2,8 @@
 from flask import Flask, render_template, Response
 import picamera
 
-app = Flask(__name__, static_url_path = "/image", static_folder="image")
+#app = Flask(__name__, static_url_path = "/image", static_folder="image")
+app = Flask(__name__)
 
 @app.route('/')
 def index():
