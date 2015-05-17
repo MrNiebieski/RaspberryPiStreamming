@@ -11,6 +11,7 @@ def index():
 
 def cam_setup():
     cam = picamera.PiCamera()
+    cam.resolution = (200,200)
     return cam
 
 def gen(cam):
